@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+html,
+body {
+  background-color: white;
+  height: 800px;
+  width: 800px;
+  margin: 0px;
+  padding: 0px;
+}
+/*contenedor padre*/
+.encabezado {
+  align-items: center;
+  border-bottom: solid 1px rgb(216, 206, 206);
+  display: flex;
+  padding: 10px 20px;
+  position: absolute;
+  min-height: 15%;
+  width: 100%;
+  justify-content: space-between;
+}
+/*Logo*/
+.logo {
+  display: flex;
+  justify-content: end;
+}
+/*Menu en el heater*/
+.menu {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+/*Estilos de la lista*/
+.menu p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  padding: 0 4px;
+}
+
+/*Punto rojo del la lista*/
+.menu img {
+  position: absolute;
+  top: 35%;
+  left: 51.5%;
+}
+/*Caja de busqueda*/
+.input-search {
+  border: solid 2px rgba(156, 156, 153, 0.445);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  height: 30px;
+  width: 15%;
+  display: flex;
+}
+/*Las especificaciones del placeholder de la caja de busqueda del icono*/
+.input-search::placeholder {
+  background-image: url(/assets/lupa.png);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 10%;
+}
+/*Que no se note la linea marcada al seleccionar la caja de busqueda*/
+.input-search:focus {
+  outline: none;
+}
+/*caja de usuario y compras*/
+.user {
+  padding-right: 5%;
+}
+
+/*iconos de usuario y compras*/
+.user img {
+  opacity: 0.5;
+}
